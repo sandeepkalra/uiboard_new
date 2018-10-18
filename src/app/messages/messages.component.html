@@ -1,0 +1,38 @@
+<button class="btn btn-default" (click)="getMessages()">Get Messages</button>
+
+
+
+<div *ngIf='loaded===true'>
+		<pre>{{data.code}} </pre>
+		<pre>{{data.message}} </pre>
+		<pre>{{data.body }} </pre>
+</div>
+<!--div *ngIf='loaded===true'>
+				<div class="row">
+						<div class="col-lg-5 col-md-8 col-sm-12 col-xs-12">
+								<div class="card">
+										<div class="card-header">
+												Message
+										</div>
+										<div class="card-block">
+												<div class="card-title">
+														{{d.title}}
+												</div>
+												<div class="card-text">
+														{{d.message}}
+												</div>
+										</div>
+										<div class="card-footer">
+												<button class="btn btn-sm btn-link">Email to {{d.email}}</button>
+										</div>
+								</div>
+						</div>
+				</div>
+</div-->
+<div>
+		<input placeholder="put your title here"/>
+		<input placeholder="message" type="textbox"/>
+		<input placeholder="email" type="email"/>
+		<input placeholder="password" type="password"/>
+		<button class="btn btn-default" (click)="postMessages()">Post Messages</button>
+</div>
